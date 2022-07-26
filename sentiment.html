@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon"  href="favicon-32.ico?v=2">
+     <link rel="canonical" href="https://cakicmilan.com" />
+      <meta name="description" content="Paste some text, and enter the word you want me to find for you how many times it apears in your text">
+      <meta name="keywords" content="milan cakic, cakic milan, personal portfolio, developer belgrade">
+    <title>Cakic Milan</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-row">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="index.html">CAKIC MILAN</a>
+                </div>
+                   <nav class="header__navigation closed">
+                       <ul class="header__navigation--links">
+                           <li><a class="link" href="projects.html">Portfolio</a></li>
+                           <li><a class="link" href="index.html">About Me</a></li>
+                           <li><a class="link" href="#cta">Contact</a></li>
+                       </ul>
+                    </nav>
+                    <div class="header__burger">
+                        <p></p>
+                    </div>
+            </div>
+        </div>
+</header>
+<section class="site__banner sentiment">
+    <div class="sentiment__banner">
+        <h2>Sentiment Analizator</h2>
+        <p>Test your text against sentiment words</p>
+        <a class="btn btn--blue btn--rounded" href="https://sentiment-analizator.web.app/lexicon">Check your text</a>
+    </div>
+</section>
+<section class="project__content">
+    <div class="row">
+        <div class="col-3-of-5" >
+            <div class="padding-horizontal--small padding-vertical--small">
+                <picture class="sentiment__image project__image">
+                    <source media="(min-width:799px)" srcset="./assets/img/sentiment/sentiment-analizator-1200.png">
+                    <source media="(min-width:250px)" srcset="./assets/img/sentiment/sentiment-analizator-800.png">
+                    <img src="./assets/img/sentiment/sentiment-analizator-800.png" alt="Sentiment Analizator">
+                </picture>
+            </div>
+        </div>
+        <div class="col-2-of-5">
+            <div class="project__description padding-horizontal--medium ">
+                <h2 class="project__description--title">Description</h2>
+                <p class="project__description--text">Let's say that you are reading some very long epic story about heroes. At some point 
+                    you wonder (for some reason) which hero name appears the most in a story. You write down the names
+                    inside this app, you pick the story to be scanned, and boom... Name "Frodo" appeared the most, i know,
+                    i wanted "Legolas" or "Gimli" too. That is what this app does in a nutshell.
+                    <br>
+                    There is much more, but about that in a <span>challenge</span>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="padding-horizontal--medium">
+            <h3 class="project__challenge--title">Challenge</h3>
+            <p class="project__challenge--text">
+                I mentioned that app can do much more, so let's go back to our heroes example for a second. We know that
+                every story with heroes must have a bad guys. Beside just writing their names and scan for how many times their names
+                shows up in a story, we can also value those names with any number. We can say that <span class="sentiment--hero">Legolas</span> is a positive hero, so we
+                can value him for example with number 1. Then we can value <span class="sentiment--hero">Saruman</span> with -1, since he is a bad one. If we scan our
+                story now, we will get +1 for every time that name <span class="sentiment--hero">Legolas</span> appears in a story, and -1 for <span class="sentiment--hero">Saruman</span>. Then a total score 
+                that shows final number, positive or negative, depending on witch name appeared more in a story. We can also add number 0, but
+                then that hero is neutral.<br><br>
+                I'm talking about heroes because that is how i like to explain. You can use this app to scan text from emails. You can 
+                pick the words you love to see in you emails, and with one click, you will know which email contains that word.<br>
+                <br>I see challenge as a title, but i see no challenge. Well, today it's not, we have now "includes" in JavaScript.
+                We can just break down text into list(array) of words and just check them with "includes".
+                But this project was made before that. To scan the words, i couldn't just pick the text and check if my word is inside
+                 that text. So i breaked down the text into huge list of words. Thats great, but that was still far from goal.
+                 If Comparing <span class="sentiment--hero">"Legolas"</span> with <span class="sentiment--hero">"Legolas."</span>, those are two different words, since second one has a dot at the end.
+                  So i trimed empty spaces and dots, special chars etc. At this point i had it. I just needed to compare the words in
+                  lowecase or uppercase. That was a small challenge here.
+            </p><br>
+            <a class="btn btn--blue btn--rounded" href="https://sentiment-analizator.web.app/lexicon">Check your text</a>
+        </div>
+      
+    </div>
+</section>
+<section class="site__cta" id="cta">
+        <div class="row">
+            <div class="col-2-of-4 padding-horizontal--medium">
+                <h2 class="site__cta--title">Let's Work Together</h2>
+                <p class="site__cta--txt">Have a project you'd like to discuss</p>
+                <a class="btn btn--blue btn--rounded" href="mailto: milancakic89@gmail.com">Get In Touch</a>
+            </div>
+            <div class="col-2-of-4 padding-horizontal--medium">
+                <ul class="site__social--links  padding-vertical--medium">
+                    <li class="projects__social--link"><a href="mailto: milancakic89@gmail.com">milancakic89@gmail.com</a></li>
+                    <li class="projects__social--link"><a href="https://www.linkedin.com/in/milancakic319b55166">On LinkedIn</a></li>
+                    <li class="projects__social--link"><a href="https://www.facebook.com/milan.cakic.129/">On Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <a href="#top" class="go--top"><i></i></a>
+    <footer class="footer">
+        <p>&copy Copyright Cakic Milan 2021</p>
+    </footer>
+    <script src="./js/scripts.js" type="module"></script>
+</body>
+</html>
